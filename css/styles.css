@@ -1,0 +1,188 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #212738;
+  font-family: 'Lato', sans-serif;
+}
+
+#header-nav {
+  background-color: #57C4E5;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Nunito', serif;
+  color: #F97068;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+
+#nav-list {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+#nav-list a {
+  color: #ca7518;
+  text-align: center;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #F97068;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+#main-content p {
+  margin-bottom: 15px;
+}
+
+.container .jumbotron {
+  background-color: #212738;
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+#chicken-tile, #beef-tile, #sushi-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+#chicken-tile:hover, #beef-tile:hover, #sushi-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#chicken-tile {
+  background: url('../images/chicken-tile.jpg') no-repeat;
+  background-position: center;
+}
+#beef-tile {
+  background: url('../images/beef-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#chicken-tile span, #beef-tile span, #sushi-tile span {
+  position: absolute;
+  bottom: 10;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+#chicken-tile h3, #beef-tile h3, #sushi-tile h3 {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.container p {
+  font-family: 'Nunito', serif;
+  color: #EDF2EF;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: .75;
+}
+
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/1200.jpg') no-repeat;
+    height: 675px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/992.jpg') no-repeat;
+    height: 558px;
+  }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/768.jpg') no-repeat;
+    height: 432px;
+  }
+
+  @media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+  .container .jumbtron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+    #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  @media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
